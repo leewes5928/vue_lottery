@@ -3,18 +3,13 @@
       <h1 class="title">Welcome to Zillion Dollar Lottery!</h1>
       <Avatar />
       <p>You will submit this as your email address:</p>
-    <Input
-      placeholder="Enter you email to win!"
-    labelName="Email"
-    v-bind:value="email" />
-      
       <Submit />
     </div>
 </template>
 
 <script>
 import Avatar from './components/Avatar'
-import Input from './components/Input"'
+import Input from './components/Input'
 import Submit from './components/Submit'
 
 export default {
