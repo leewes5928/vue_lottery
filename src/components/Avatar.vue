@@ -1,12 +1,24 @@
 <template>
   <div class="avatar">
-    AVATAR
+    <img class="avatar" v-bind:src="image" alt="" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Avatar'
+  name: 'Avatar',
+  data () {
+    return {
+      image: ''
+    }
+  },
+  mounted () {
+    fetch('https://source.unsplash.com/random').then(
+      (response) => {
+        this.image = response.url
+      }
+    )
+  }
 }
 </script>
 
