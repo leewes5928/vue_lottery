@@ -4,6 +4,13 @@
 	</div>
 </template>
 
+<script>
+export default {
+	name: "Avatar"
+}
+</script>
+
+
 <style scoped>
 	.avatar {
 		width: 200px;

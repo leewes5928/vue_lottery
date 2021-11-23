@@ -11,7 +11,7 @@
 <script>
 export default {
 	name: "Input",
-	props: ['label', 'value', 'placeholder']
+	props: ['labelName', 'value', 'placeholder']
 }
 </script>
 

@@ -1,28 +1,30 @@
 <template>
-	<div className="container">
-      <h1 className="title">Welcome to Zillion Dollar Lottery!</h1>
-      <p>You will submit this as your email address:</p>
+	<div class="container">
+      <h1 class="title">Welcome to Zillion Dollar Lottery!</h1>
       <Avatar />
+      <p>You will submit this as your email address:</p>
 	  <Input
 	  	placeholder="Enter you email to win!"
-		label="Email"
+		labelName="Email"
 		v-bind:value="email" />
       
-      <!-- Render message or input form -->
+      <Submit />
     </div>
 </template>
 
 <script>
 import Avatar from "./components/Avatar";
 import Input from "./components/Input";
+import Submit from "./components/Submit";
 
 export default {
 	name: "LotteryForm",
 	components: {
 		Avatar,
-		Input
+		Input,
+		Submit
 	},
-	data: () => {
+	data() {
 		return {
 			email: "andy@codechrysalis.io"
 		}
