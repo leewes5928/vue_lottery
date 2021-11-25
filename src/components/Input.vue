@@ -1,8 +1,14 @@
 <template>
+  <label>
+    {{labelText}}
+    <input type="email" :placeholder="placeholder" />
+  </label>
 </template>
 
 <script>
 export default {
+  name: 'Input',
+  props: ['placeholder', 'labelText']
 }
 </script>
 

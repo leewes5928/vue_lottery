@@ -1,8 +1,17 @@
 <template>
+  <button @click="onClicker">Submit</button>
 </template>
 
 <script>
 export default {
+  name: 'Submit',
+  methods: {
+    onClicker: function (e) {
+      this.$emit('myclick', 'data')
+      console.log('clicked')
+    }
+  },
+  emits: ['myclick']
 }
 </script>
 
