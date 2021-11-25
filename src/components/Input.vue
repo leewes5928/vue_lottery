@@ -1,18 +1,8 @@
 <template>
-  <div>
-    <label v-bind:for="label">{{ labelName }}</label>
-    <input
-      class="input"
-      v-bind:value="value"
-      v-bind:placeholder="placeholder"
-    />
-  </div>
 </template>
 
 <script>
 export default {
-  name: 'Input',
-  props: ['labelName', 'value', 'placeholder']
 }
 </script>
 

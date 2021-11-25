@@ -1,12 +1,8 @@
 <template>
-  <button class="button">
-      Enter to Win!
-    </button>
 </template>
 
 <script>
 export default {
-  name: 'Submit'
 }
 </script>
 

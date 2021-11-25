@@ -1,28 +1,20 @@
 <template>
   <div class="container">
       <h1 class="title">Welcome to Zillion Dollar Lottery!</h1>
-      <Avatar />
-      <p>You will submit this as your email address:</p>
-      <Submit />
+      <!-- this is where your HTML goes -->
     </div>
 </template>
 
 <script>
-import Avatar from './components/Avatar'
-import Input from './components/Input'
-import Submit from './components/Submit'
+// TODO: Import child components
 
 export default {
   name: 'LotteryForm',
   components: {
-    Avatar,
-    Input,
-    Submit
+    // Child components here
   },
   data () {
-    return {
-      email: 'andy@codechrysalis.io'
-    }
+    // State goes here
   }
 }
 </script>
